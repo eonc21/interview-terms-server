@@ -43,19 +43,19 @@ app.use(bodyParser.json());
  * GET request for terminology
  * in a specific category
  */
-// app.get(`${baseUrl}/:category`, (req, res) => {
-//     let termArray = [];
-//     const category = req.params.category;
-//     console.log(category)
+app.get(`${baseUrl}/:category`, (req, res) => {
+    let termArray = [];
+    const category = req.params.category;
+    console.log(category)
 
-//     terms.filter(term => term.category == category)
-//             .map(term => termArray.push(term))
+    terms.filter(term => term.category == category)
+            .map(term => termArray.push(term))
 
-//     res.json(termArray)
+    res.json(termArray)
 
-// });
+});
 
-app.post(`/`, (req, res) => {
+app.post(`${baseUrl}/:category/:term/:explanation`, (req, res) => {
     const term = req.params.term
     const category = req.params.category
     const explanation = req.params.explanation
