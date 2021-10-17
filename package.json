@@ -1,0 +1,27 @@
+{
+  "name": "interview-terms-server",
+  "version": "1.0.0",
+  "description": "My server-side code for my personal interview-preparation website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eonc21/interview-terms-server.git"
+  },
+  "keywords": [
+    "server"
+  ],
+  "author": "Elinor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eonc21/interview-terms-server/issues"
+  },
+  "homepage": "https://github.com/eonc21/interview-terms-server#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
